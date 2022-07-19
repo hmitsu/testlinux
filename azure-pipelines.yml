@@ -23,7 +23,7 @@ jobs:
             Contents: '**'
             TargetFolder: '/home/azureuser/target'
 
-jobs: 
+#jobs: 
 - deployment:
   displayName: LinuxDeploy0615
   environment: 
