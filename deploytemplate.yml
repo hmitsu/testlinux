@@ -1,0 +1,21 @@
+parameters:
+  displayName: ''
+  envname: ''
+  envresourceName: ''
+
+jobs: 
+- deployment:
+  displayName: ${{parameters.displayName}}
+  environment: 
+    name: ${{parameters.envname}}
+    resourceName:  ${{parameters.envresourceName}}
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - task: CopyFiles@2
+          inputs:
+            SourceFolder: '$(Build.SourcesDirectory)'
+            Contents: '**'
+            TargetFolder: '/home/azureuser/target'
