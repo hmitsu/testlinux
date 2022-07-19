@@ -7,7 +7,7 @@ trigger:
 - main
 
 jobs: 
-- template: deploymenttemplate.yml # Template reference
+- template: deploytemplate.yml # Template reference
   parameters:
    displayName: LinuxDeploy0609
    envname: test0609
