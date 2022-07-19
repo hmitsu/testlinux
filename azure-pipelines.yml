@@ -28,7 +28,7 @@ jobs:
   displayName: LinuxDeploy0615
   environment: 
     name: test0615
-    resourceName: vhmitsuUbuntu2
+    resourceName: vmitsuUbuntu2
   strategy:
     runOnce:
       deploy:
