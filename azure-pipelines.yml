@@ -7,22 +7,22 @@ trigger:
 - main
 
 jobs: 
-- deployment:
-  displayName: LinuxDeploy0609
-  environment: 
-    name: test0609
-    resourceName: vhmitsuUbuntu
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - checkout: self
-        - task: CopyFiles@2
-          inputs:
-            SourceFolder: '$(Build.SourcesDirectory)'
-            Contents: '**'
-            TargetFolder: '/home/azureuser/target'
-
+#- deployment:
+#  displayName: LinuxDeploy0609
+#  environment: 
+#    name: test0609
+#    resourceName: vhmitsuUbuntu
+#  strategy:
+#    runOnce:
+#      deploy:
+#        steps:
+#        - checkout: self
+#        - task: CopyFiles@2
+#          inputs:
+#            SourceFolder: '$(Build.SourcesDirectory)'
+#            Contents: '**'
+#            TargetFolder: '/home/azureuser/target'
+#
 #jobs: 
 - deployment:
   displayName: LinuxDeploy0615
