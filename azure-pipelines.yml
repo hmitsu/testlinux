@@ -8,10 +8,10 @@ trigger:
 
 jobs: 
 - deployment:
-  displayName: LinuxDeployTest # Job の表示名です。任意の名前にご変更ください。
+  displayName: LinuxDeployTest
   environment: 
-    name: 'test0609' # Environment 名です。ご設定された Environment 名へご変更ください。
-    resourceName: 'vhmitsuUbuntu' # Environment に登録した Resource 名です。ご登録された Resource 名へご変更ください。
+    name: 'test0609'
+    resourceName:
   strategy:
     runOnce:
       deploy:
