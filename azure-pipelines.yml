@@ -13,7 +13,7 @@ jobs:
    envname: test0609
    envresourceName: vhmitsuUbuntu
 
-- template: deploymenttemplate.yml # Template reference
+- template: deploytemplate.yml # Template reference
   parameters:
    displayName: LinuxDeploy0615
    envname: test0615
