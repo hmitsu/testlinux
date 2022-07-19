@@ -6,7 +6,7 @@
 trigger:
 - main
 
-jobs: 
+jobs:
 - deployment:
   displayName: LinuxDeployTest
   environment: 
